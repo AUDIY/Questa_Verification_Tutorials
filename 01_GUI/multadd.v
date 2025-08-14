@@ -2,7 +2,7 @@
 * multadd.v
 * 
 *   Author: AUDIY
-*   Date  : 2025/06/15
+*   Date  : 2025/08/14
 *
 *   Inputs
 *       clk    : Clock
@@ -87,3 +87,4 @@ module multadd #(
 endmodule
 
 `default_nettype wire
+
