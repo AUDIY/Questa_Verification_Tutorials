@@ -2,7 +2,7 @@
 * multadd_tb.sv
 * 
 *   Author: AUDIY
-*   Date  : 2025/06/15
+*   Date  : 2025/08/14
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ module multadd_tb ();
     reg                                      aresetn = 1'b0;
     wire signed [(add_width + mult_width):0] y;
 
-    // Instanciation
+    // Instantiation
     multadd #(
         .add_width (add_width ),
         .mult_width(mult_width)
@@ -51,7 +51,7 @@ module multadd_tb ();
         .y      (y      )
     );
 
-    // vcd generation & finish
+    // VCD generation & finish
     initial begin
         $dumpfile("multadd_tb.vcd");
         $dumpvars(0, multadd_tb);
@@ -92,3 +92,4 @@ module multadd_tb ();
 endmodule
 
 `default_nettype wire
+
