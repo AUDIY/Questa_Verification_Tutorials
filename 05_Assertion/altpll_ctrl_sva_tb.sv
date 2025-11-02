@@ -2,7 +2,7 @@
 * altpll_ctrl_sva_tb.sv
 * 
 *   Author: AUDIY
-*   Date  : 2025/10/10
+*   Date  : 2025/11/02
 *
 * License under CERN-OHL-P v2
 --------------------------------------------------------------------------------
@@ -109,7 +109,7 @@ module altpll_ctrl_sva_tb ();
     // Assertions
     // Assertion 1: clkswitch must 1'b1 when clksel and activeclk doesn't equal.
     assert_1: assert property (
-        @(posedge inclk0) disable iff (i == 0) (clksel ^ activeclk) |=> ##[0:1] clkswitch
+        @(posedge inclk0) disable iff (i == 0) (clksel ^ activeclk) |=> ##[0:1] $rose(clkswitch)
     );
 
     // Assertion 2: clkswitch must have CLKSWITCH_CYCLE pulse width.
@@ -135,3 +135,4 @@ module altpll_ctrl_sva_tb ();
 endmodule
 
 `default_nettype wire
+
