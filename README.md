@@ -1,8 +1,8 @@
 # Questa_Verification_Tutorials
-Examples for Questa-Altera FPGA Starter Editionで始めるRTL検証
+Examples for [Questa-Altera FPGA Starter Editionで始めるRTL検証](https://zenn.dev/audiy/books/fcd9c279361102)
 
 ## 概要
-当リポジトリは「Questa-Altera FPGA Starter Editionで始めるRTL検証」に記載の内容を実際に実行するためのExample集です。
+当リポジトリは「[Questa-Altera FPGA Starter Editionで始めるRTL検証]()」に記載の内容を実際に実行するためのExample集です。
 
 ## サンプルプロジェクト一覧
 ### 01_GUI
